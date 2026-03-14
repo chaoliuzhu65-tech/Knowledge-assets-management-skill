@@ -1,0 +1,26 @@
+{
+  "name": "feishu-knowledge-assets",
+  "version": "1.0.0",
+  "description": "飞书知识资产沉淀与经验总结工具集，基于飞书MCP插件能力，支持经验快速沉淀、结构化梳理、自动归档和知识复用",
+  "author": "ArkClaw Team",
+  "license": "MIT",
+  "tags": ["feishu", "knowledge", "documentation", "assets", "summary", "review"],
+  "homepage": "https://github.com/arkclaw/feishu-knowledge-assets",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arkclaw/feishu-knowledge-assets.git"
+  },
+  "dependencies": {
+    "feishu-openclaw-plugin": ">=1.0.0"
+  },
+  "skills": [
+    {
+      "name": "feishu-knowledge-assets",
+      "path": "SKILL.md",
+      "description": "飞书知识资产沉淀与经验总结工具集"
+    }
+  ],
+  "categories": ["Productivity", "Knowledge Management"],
+  "images": [],
+  "readme": "README.md"
+}

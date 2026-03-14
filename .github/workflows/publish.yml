@@ -1,0 +1,22 @@
+name: Publish to ClawHub
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install ClawHub CLI
+        run: npm install -g @clawhub/cli
+      
+      - name: Package skill
+        run: zip -r feishu-knowledge-assets.skill .
+      
+      - name: Publish to ClawHub
+        run: clawhub publish feishu-knowledge-assets.skill
+        env:
+          CLAWHUB_TOKEN: ${{ secrets.CLAWHUB_TOKEN }}
