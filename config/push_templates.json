@@ -1,0 +1,26 @@
+{
+  "dingtalk": {
+    "msgtype": "markdown",
+    "title": "🧠 知识升级报告",
+    "include_sections": [
+      "盘点概况",
+      "现有知识积累",
+      "外网动态",
+      "升级要点",
+      "行动建议"
+    ]
+  },
+  "feishu": {
+    "template": "blue",
+    "wide_screen_mode": true,
+    "include_sections": [
+      "盘点概况",
+      "行动建议"
+    ],
+    "max_elements": 10
+  },
+  "local": {
+    "format": "markdown",
+    "output_dir": "./reports"
+  }
+}

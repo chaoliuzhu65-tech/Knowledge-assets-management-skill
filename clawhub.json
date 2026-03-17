@@ -1,0 +1,40 @@
+{
+  "name": "knowledge-assets-skill",
+  "displayName": "知识资产管理助手",
+  "description": "个人知识资产全面复用与实时检索能力。本地扫描知识文档 + 外网实时检索最新信息 + AI融合生成升级版报告 + 钉钉/飞书自动归档推送",
+  "version": "2.0.0",
+  "author": "ccc",
+  "license": "MIT",
+  "homepage": "https://github.com/chaoliuzhu65-tech/Knowledge-assets-management-skill",
+  "repository": "https://github.com/chaoliuzhu65-tech/Knowledge-assets-management-skill.git",
+  "category": "productivity",
+  "tags": ["knowledge", "RAG", "web-search", "upgrade", "dingtalk", "feishu", "AI", "learning", "personal-assistant"],
+  "icon": "🧠",
+  "features": [
+    "本地知识自动扫描",
+    "外网实时检索",
+    "AI知识融合升级",
+    "钉钉/飞书双路推送",
+    "结构化报告生成",
+    "主题知识盘点"
+  ],
+  "dependencies": {
+    "workbuddy": ">=2025.12",
+    "dingtalk-mcp-skill": ">=1.0",
+    "lark-feishu-skill": ">=1.0"
+  },
+  "requires": {
+    "bins": ["python3", "curl"],
+    "env": ["KNOWLEDGE_BASE_PATH"]
+  },
+  "install": {
+    "copy": true,
+    "config_required": true,
+    "setup_steps": [
+      "cp -r knowledge-assets-skill ~/WorkBuddy/skills/",
+      "cp .env.example .env",
+      "编辑 .env 配置 KNOWLEDGE_BASE_PATH",
+      "（可选）配置 dingtalk/.env 和 feishu/.env"
+    ]
+  }
+}

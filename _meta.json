@@ -1,0 +1,20 @@
+{
+  "slug": "knowledge-assets-skill",
+  "version": "2.0.0",
+  "publishedAt": 1742192000000,
+  "author": "ccc",
+  "description": "个人知识资产全面复用与实时检索能力。本地扫描 + 外网检索 + AI融合 + 多渠道归档",
+  "homepage": "https://github.com/chaoliuzhu65-tech/Knowledge-assets-management-skill",
+  "repository": "https://github.com/chaoliuzhu65-tech/Knowledge-assets-management-skill.git",
+  "license": "MIT",
+  "keywords": ["knowledge", "RAG", "web-search", "upgrade", "dingtalk", "feishu", "AI", "learning"],
+  "dependsOn": ["dingtalk-mcp-skill", "lark-feishu-skill"],
+  "openclaw": {
+    "requires": {
+      "bins": ["python3", "curl"],
+      "env": ["KNOWLEDGE_BASE_PATH"]
+    },
+    "primaryEnv": "KNOWLEDGE_BASE_PATH",
+    "version": "2.0.0"
+  }
+}
